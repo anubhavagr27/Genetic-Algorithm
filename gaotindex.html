@@ -1,0 +1,168 @@
+<html> <head>
+<title></title>
+</head>
+
+<body>
+<h1>Genetic Algorithm Optimization Toolbox (GAOT) for Matlab 5</h1>
+
+
+The following files are in the distribution:
+
+<h3>Main interface</h3>
+
+<ul>
+<table  Border=0 CellPadding=0>
+  <tr><td Width=150><a href="./ga.m">ga.m</a></td><td> The Genetic Algorithm  </td></tr> 
+ <tr><td><a href="./initializega.m">initializega.m</a></td><td>
+Initialization function for float and binary representation and used by ga.m    </td></tr>
+ <tr><td><a href="./initializeoga.m">initializeoga.m</a></td><td>
+Initialization function for order-based representation. </td></tr>
+</table>
+</ul>
+<h3>Operators used during simulated evolution</h3>
+
+<h4>Crossover Operators</h4>
+
+<h5>Float and  Binary Representation</h5>
+<ul>
+<table  Border=0 CellPadding=0>
+  <tr><td Width=150>
+    <a href="./simpleXover.m">simpleXover.m</a></td>
+    <td> Operator for the Algorithm Used by ga.m </td></tr>
+</table>
+</ul>
+<h5>Float Representation</h5>
+<ul>
+<table  Border=0 CellPadding=0>
+  <tr><td Width=150>
+    <a href="./heuristicXover.m">heuristicXover.m</a></td>
+    <td>Operator for the Algorithm Used by ga.m </td></tr>
+    <tr><td><a href="./arithXover.m">arithXover.m</a></td>
+    <td> Operator for the Algorithm Used by ga.m </td></tr>
+    </table>
+</ul>
+<h5>Order-Based Representation</h5>
+<ul>
+<table  Border=0 CellPadding=0>
+  <tr><td Width=150>
+    <a href="./cyclicXover.m">cyclicXover</a></td>
+    <td>Operator for the Algorithm Used by ga.m </td></tr>
+    <tr><td><a href="./linerorderXover.m">linerorderXover</a></td>
+    <td> Operator for the Algorithm Used by ga.m </td></tr>
+    <tr><td><a href="./orderbasedXover.m">orderbasedXover</a></td>
+    <td>Operator for the Algorithm Used by ga.m </td></tr>
+    <tr><td><a href="./partmapXover.m">partmapXover</a></td>
+    <td> Operator for the Algorithm Used by ga.m </td></tr>
+    <tr><td><a href="./singleptXover.m">singleptXover</a></td>
+    <td>Operator for the Algorithm Used by ga.m </td></tr>    
+    <tr><td><a href="./uniformXover.m">uniformXover</a></td>
+    <td> Operator for the Algorithm Used by ga.m </td></tr>
+ </table>
+</ul>
+
+
+<h4>Mutation Operators</h4>
+
+<h5>  Binary Representation</h5>
+<ul>
+<table Border=0 CellPadding=0>
+  <tr><td Width=150><a href="./binaryMutation.m">binaryMutation.m</a></td><td>       Operator for the Algorithm Used by ga.m </td></tr>
+</table>
+</ul>		    
+<h5>Float Representation</h5>
+<ul>
+<table Border=0 CellPadding=0>
+  <tr><td Width=150><a href="./boundaryMutation.m">boundaryMutation.m</a></td><td>     Operator for the Algorithm Used by ga.m </td></tr>
+  <tr><td><a href="./multiNonUnifMutation.m">multiNonUnifMutation.m</a></td><td> Operator for the Algorithm Used by ga.m </td></tr>
+  <tr><td><a href="./nonUnifMutation.m">nonUnifMutation.m</a></td><td>      Operator for the Algorithm Used by ga.m </td></tr>
+  <tr><td><a href="./unifMutation.m">unifMutation.m</a></td><td>         Operator for the Algorithm Used by ga.m</td></tr>
+</table>
+</ul>		    
+
+ <h5>Binary and Order-Based Representation</h5>
+   <ul>
+<table Border=0 CellPadding=0>
+  <tr><td Width=150><a href="./inversionMutation.m">inversionMutation</a></td><td>     Operator for the Algorithm Used by ga.m
+</td></tr>
+</table>
+</ul>		    
+
+<h5> Order-Based Representation
+</h5>
+   <ul>
+<table Border=0 CellPadding=0>
+  <tr><td Width=150><a href="./adjswapMutation.m">adjswapMutation.m</a></td><td>      Operator for the Algorithm Used by ga.m 
+    </td></tr>
+  <tr><td><a href="./shiftMutation.m">shiftMutation.m</a></td><td>        Operator for the Algorithm Used by ga.m 
+    </td></tr>
+  <tr><td><a href="./swapMutation.m">swapMutation.m</a></td><td>         Operator for the Algorithm Used by ga.m 
+    </td></tr>
+  <tr><td><a href="./threeswapMutation.m">threeswapMutation.m</a></td><td>    Operator for the Algorithm Used by ga.m 
+</table>
+</ul>		    
+
+<h3>Selection Functions</h3>
+  <ul>
+<table Border=0 CellPadding=0>
+<tr><td Width=150><a href="./normGeomSelect.m">normGeomSelect.m</a></td><td>       Selection function Used by ga.m
+   </td></tr><tr><td><a href="./roulette.m">roulette.m</a></td><td>             Selection function Used by ga.m
+   </td></tr><tr><td><a href="./tournSelect.m">tournSelect.m</a></td><td>          Selection function Used by ga.m</td></tr>
+</table>
+</ul>	
+
+<h3>Termination Functions</h3>
+  <ul>
+<table Border=0 CellPadding=0>
+<tr><td Width=150><a href="./maxGenTerm.m">maxGenTerm.m</a></td><td>           Termination function Used by ga.m
+  </td></tr><tr><td><a href="./optMaxGenTerm.m">optMaxGenTerm.m</a></td><td>        Termination function Used by ga.m </td></tr>
+</table>
+</ul>	
+<h3>Functions used for binary representation</h3>
+  <ul>
+<table Border=0 CellPadding=0>
+<tr><td Width=150><a href="./calcbits.m">calcbits.m</a></td><td>             Binary precision function used by ga.m
+  </td></tr>
+  <tr><td><a href="./f2b.m">f2b.m</a></td><td>                  Float to Binary conversion used by ga.m
+  </td></tr><tr><td><a href="./b2f.m">b2f.m</a></td><td>                  Binary to Float conversion used by ga.m</td></tr>
+</table>
+</ul>
+<h3>Utility functions</h3>
+  <ul>
+<table Border=0 CellPadding=0>
+<tr><td Width=150><a href="./parse.m">parse.m</a></td><td>                Parse blank separated names used by ga.m
+  </td></tr><tr><td><a href="./delta.m">delta.m</a></td><td>                Used by nonUnifMutation.m and mult...m </td></tr>
+</table>
+</ul>
+<h3>Demonstrations</h3>
+   <ul>
+<table Border=0 CellPadding=0>
+<tr><td Width=150><a href="./gademo1.m">gademo1.m</a></td><td>              Introductory demo of GAOT
+  </td></tr><tr><td><a href="./gademo2.m">gademo2.m</a></td><td>              Multi-dimensional demo of GAOT
+  </td></tr><tr><td><a href="./gademo3.m">gademo3.m</a></td><td>              Reference for GAOT
+  <tr><td><a href="./floatExample.m">floatExample.m</a></td><td>         Example using float representation </td></tr>
+  <tr><td><a href="./floatGradExample.m">floatGradExample.m</a></td><td>     Example exploring learning(Lamarckian and Baldwinian) </td></tr>
+  <tr><td><a href="./binaryExample.m">binaryExample.m</a></td><td>        Example using binary representation </td></tr>
+  <tr><td><a href="./orderBasedExample.m">orderBasedExample.m</a></td><td>    Example using order-based representation </td></tr>
+</table>
+</ul>
+ <h4>Functions used in Demonstrations</h4>
+   <ul>
+<table Border=0 CellPadding=0>
+<tr><td Width=150><a href="./gademo1eval1.m">gademo1eval1.m</a></td><td>         Example eval function used by gademo1.m
+  </td></tr><tr><td><a href="./coranaEval.m">coranaEval.m</a></td><td>           Calculate Corana functions used by gademo2.m
+  </td></tr><tr><td><a href="./coranaMin.m">coranaMin.m</a></td><td>            Calculate negative of Corana used by gademo2.m
+  </td></tr>
+  <tr><td><a href="./gaMichEval.m">gaMichEval.m</a></td><td>            Michalewicz 2-variable problem evaluation</td></tr>
+  <tr><td><a href="./gaZBGradEval.m">gaZBGradEval.m</a></td><td>          Michalewicz Evaluation Used for Learning example   </td></tr>   
+  <tr><td><a href="./gaZBGrad.m">gaZBGrad.m</a></td><td>              Gradient used for SQP during learning</td></tr>
+  <tr><td><a href="./tspEval.m">tspEval.m</a></td><td>               Function used in orderBasedExample</td></tr>
+</table>
+</ul>
+
+
+<hr>
+<address><a href="mailto:jjoine@eos.ncsu.edu">Jeff Joines (jjoine@eos.ncsu.edu)</address>
+<!-- hhmts start -->
+Last modified: Fri Apr 17 09:53:01 EDT 1998
+<!-- hhmts end -->
+</body> </html>
